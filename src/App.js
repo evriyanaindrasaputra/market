@@ -1,18 +1,19 @@
 import React from "react";
 import { ItemProvider } from "./Context/ItemContext";
-import "./App.css";
-import Items from "./components/Items/Items";
+
 import { CartProvider } from "./Context/CartContext";
-import Carts from "./components/Carts/Carts";
+import Routes from "./Config/Routes";
+import { Container } from "@material-ui/core";
 
 function App() {
   return (
     <ItemProvider>
       <CartProvider>
-        <div className="App">
-          <Carts />
-          <Items />
-        </div>
+        <Container maxWidth="lg">
+          <div className="App">
+            <Routes />
+          </div>
+        </Container>
       </CartProvider>
     </ItemProvider>
   );

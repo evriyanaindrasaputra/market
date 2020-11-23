@@ -8,19 +8,73 @@ export const ItemProvider = (props) => {
       name: "banana",
       price: 20000,
       total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 1,
     },
     {
       name: "apple",
       price: 25000,
       total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 2,
     },
     {
       name: "stawberry",
       price: 20000,
       total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 3,
+    },
+    {
+      name: "guava",
+      price: 20000,
+      total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
+      id: 4,
+    },
+    {
+      name: "guava",
+      price: 20000,
+      total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
+      id: 5,
+    },
+    {
+      name: "guava",
+      price: 20000,
+      total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
+      id: 6,
+    },
+    {
+      name: "guava",
+      price: 20000,
+      total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
+      id: 7,
+    },
+    {
+      name: "guava",
+      price: 20000,
+      total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
+      id: 8,
+    },
+    {
+      name: "guava",
+      price: 20000,
+      total: 1,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
+      id: 9,
     },
   ]);
   return (
