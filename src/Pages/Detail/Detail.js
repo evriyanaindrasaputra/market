@@ -5,17 +5,16 @@ import { Item, Navbar } from "../../components";
 const Detail = () => {
   const [items] = useContext(ItemContext);
   const { id } = useParams();
-  const seletedItem = items.filter((item) => item.id == id);
-  const selected = { ...seletedItem };
-  // console.log(selected[0].name);
+  const selectedItem = items.filter((item) => item.id === parseInt(id));
   return (
     <div>
       <Navbar />
       <Item
-        name={seletedItem[0].name}
-        price={seletedItem[0].price}
-        description={seletedItem[0].description}
-        id={seletedItem[0].id}
+        name={selectedItem[0].name}
+        price={selectedItem[0].price}
+        description={selectedItem[0].description}
+        id={selectedItem[0].id}
+        quantity={selectedItem[0].quantity}
       />
     </div>
   );

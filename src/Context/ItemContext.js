@@ -7,7 +7,7 @@ export const ItemProvider = (props) => {
     {
       name: "banana",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 1,
@@ -15,7 +15,7 @@ export const ItemProvider = (props) => {
     {
       name: "apple",
       price: 25000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 2,
@@ -23,7 +23,7 @@ export const ItemProvider = (props) => {
     {
       name: "stawberry",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 3,
@@ -31,7 +31,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 4,
@@ -39,7 +39,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 5,
@@ -47,7 +47,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 6,
@@ -55,7 +55,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 7,
@@ -63,18 +63,10 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
-      total: 1,
+      quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
       id: 8,
-    },
-    {
-      name: "guava",
-      price: 20000,
-      total: 1,
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
-      id: 9,
     },
   ]);
   return (

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { CartContext } from "../../../Context/CartContext";
 import {
@@ -13,15 +13,24 @@ import {
 
 import useStyles from "./style";
 
-const Item = ({ name, price, description, id }) => {
+const Item = ({ name, price, description, id, quantity }) => {
   const [cart, setCart] = useContext(CartContext);
   const classes = useStyles();
   const history = useHistory();
   const addToCart = () => {
-    const newCart = { name: name, price: price, description: description };
+    const newCart = {
+      name: name,
+      price: price,
+      description: description,
+      quantity: quantity,
+      id: Date.now(),
+    };
+    // localStorage.setItem("cart", JSON.stringify(cart));
     setCart((current) => [...current, newCart]);
-    localStorage.setItem("cart", JSON.stringify(cart));
   };
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
   return (
     <div>
       <Card className={classes.root}>
