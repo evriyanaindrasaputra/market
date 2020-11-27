@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { CartContext } from "../../../Context/CartContext";
 import {
@@ -13,8 +13,9 @@ import {
 
 import useStyles from "./style";
 
-const Item = ({ name, price, description, id, quantity }) => {
+const Item = ({ name, price, description, id, quantity, image }) => {
   const [cart, setCart] = useContext(CartContext);
+  // const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")));
   const classes = useStyles();
   const history = useHistory();
   const addToCart = () => {
@@ -22,15 +23,16 @@ const Item = ({ name, price, description, id, quantity }) => {
       name: name,
       price: price,
       description: description,
+      image: image,
       quantity: quantity,
       id: Date.now(),
     };
-    // localStorage.setItem("cart", JSON.stringify(cart));
     setCart((current) => [...current, newCart]);
+    localStorage.setItem("cart", JSON.stringify([...cart, newCart]));
   };
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+  // useEffect(() => {
+  //   localStorage.setItem("cart", JSON.stringify(cart));
+  // }, [cart]);
   return (
     <div>
       <Card className={classes.root}>

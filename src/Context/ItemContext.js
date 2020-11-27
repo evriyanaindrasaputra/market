@@ -7,6 +7,7 @@ export const ItemProvider = (props) => {
     {
       name: "banana",
       price: 20000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
@@ -15,6 +16,7 @@ export const ItemProvider = (props) => {
     {
       name: "apple",
       price: 25000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
@@ -23,6 +25,7 @@ export const ItemProvider = (props) => {
     {
       name: "stawberry",
       price: 20000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
@@ -39,6 +42,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
@@ -47,6 +51,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
@@ -55,6 +60,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",
@@ -63,6 +69,7 @@ export const ItemProvider = (props) => {
     {
       name: "guava",
       price: 20000,
+      image: "",
       quantity: 1,
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quia.",

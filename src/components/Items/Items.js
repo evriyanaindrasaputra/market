@@ -16,6 +16,7 @@ const Items = () => {
               price={item.price}
               quantity={item.quantity}
               description={item.description}
+              image={item.image}
             />
           </Grid>
         ))}

@@ -9,10 +9,11 @@ import {
 import DeleteIcon from "@material-ui/icons/Delete";
 import useStyles from "./style";
 
-const CartDetail = ({ cart }) => {
+const CartDetail = ({ cart, deleteFromCart }) => {
   const classes = useStyles();
   const onChange = (e) => {
     cart.quantity = e.target.value;
+    cart.price = cart.price * cart.quantity;
     console.log(cart);
   };
   return (
@@ -44,13 +45,17 @@ const CartDetail = ({ cart }) => {
             defaultValue={cart.quantity}
             onChange={(e) => onChange(e)}
           />
-          <IconButton color="secondary" aria-label="delete" onClick={() => {}}>
+          <IconButton
+            color="secondary"
+            aria-label="delete"
+            onClick={() => deleteFromCart(cart.id)}
+          >
             <DeleteIcon />
           </IconButton>
         </Box>
       </Grid>
       <Grid item md={3} xs={12}>
-        {cart.price * cart.quantity}
+        {cart.price}
       </Grid>
     </Grid>
   );
